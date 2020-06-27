@@ -1,5 +1,0 @@
-Name Address section    type     value                    size      Defined/Undefined
-i       0      Data     Double    4                        4             D
-j       4      Data     Byte     'this is b string',10,0   18            D
-p       22     Data     Byte      10,20,30                 12            D
-ABC     0      Text     label     NA                       0             D
