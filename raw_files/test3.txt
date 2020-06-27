@@ -1,0 +1,65 @@
+section .data
+		a dd 10
+		b dd 10,20
+	section .text
+		global main
+	main:	mov eax,ebx
+	D8
+	mov ecx,edx
+	D1
+	mov ax,cx
+	C8
+	add eax,20
+	C0
+	add ebx,20
+	C3
+	sub ebx,10
+	EB
+	mov ecx,dword[a]
+	0D
+	mov edx,dword[a]
+	15
+	add ecx,dword[ebx+ecx*4]
+	0C8B
+	add ecx,dword[ebx*4]
+	0C9D00000000
+	add ecx,dword[ecx*8]
+	0CCD00000000
+	add ecx,dword[edx+200]
+	8Ac8000000
+	add ebx,dword[edx+200]
+	9Ac8000000
+	add ebx,dword[edx+128]
+	9A80000000
+	add ebx,dword[edx+126]
+	5A7e
+	add ebx,dword[edx+127]
+	5A7f
+	add ebx,dword[edx+64]
+	5A40
+	add ebx,dword[ebx+64]
+	5B40
+	add ebx,dword[ebx+256]
+	9B10000000
+	add ebx,dword[ebx+500]
+	9B1f400000
+	add ebx,dword[ebx+257]
+	9B10100000
+	add ebx,dword[ebx+512]
+	9B20000000
+	add eax,dword[eax+512]
+	8020000000
+        add ebx,dword[ebx+1000]
+	9B3e800000
+        add ebx,dword[ebx+511]
+	9B1ff00000
+	add ebx,dword[ebx+1024]
+	9B40000000
+        add ebx,dword[ebx+1023]
+	9B3ff00000
+        add ebx,dword[ebx+2334344]
+	9B239e8800
+	add ebx,dword[a+200]
+	C3
+;	add ebx,dword[ebx+a*8]
+	

@@ -1,0 +1,8 @@
+Name Address section type     value           size      Defined/Undefined
+i       0      Data  Double    4              4             D
+j       4      Data  Byte     'this is a      18            D
+                               string',10,0
+p       0      Bss   label     NA             5             D
+main    0      Text  label     NA             0             D
+Tst     4      Text  label     NA             0             D
+ABC     20     Text  label     NA             0             U
